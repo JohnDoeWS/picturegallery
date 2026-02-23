@@ -9,10 +9,15 @@
 //DEFINE ('DB_PASSWORD', 'root');
 //DEFINE ('DB_HOST', '127.0.0.1');
 
+$db_user = getenv('DB_USER')
+$db_password = getenv('DB_PASSWORD')
+$db_host = getenv('DB_HOST')
+  
+
 // Set the database access information as constants:
-DEFINE ('DB_USER', 'johndoe');
-DEFINE ('DB_PASSWORD', 'Motdepasse0!');
-DEFINE ('DB_HOST', 'sqlformationcloud.musql.database.azure.com');
+DEFINE ('DB_USER', $db_user);
+DEFINE ('DB_PASSWORD', $db_password);
+DEFINE ('DB_HOST', $db_host);
 DEFINE ('DB_NAME', 'picturegallery');
 
 
